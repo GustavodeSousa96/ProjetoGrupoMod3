@@ -1,0 +1,42 @@
+.footer{
+    background-color: #222; /*Cor do rodapé */
+    color: #FFF; /*Cor das letras do rodapé */
+    padding: 3em;
+    text-align: center;
+}
+
+.social_list { /*Icones das mídias sociais*/
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social_list li {
+    margin: 1em;
+}
+
+.social_list li:hover{ /*Cor que muda ao passar o mouse nos ícones */
+    .home_container {
+        width: 100%; /*Para trabalhar com 100% da section*/
+        display: flex;
+        flex-direction: column; /*Sistema de colunas, para poder colocar um item abaixo do outro  */
+        align-items: center; /*Alinhamento vertical*/
+        justify-content: center; /*Alinhamento horizontal*/
+        padding: 4em;
+    }
+}
+
+.social_list svg{ /*Tamanho dos ícones */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.copy_right { /*Cor do nome da empresa no rodapé */
+    margin-top: 0.5em;
+
+}
+
+.copy_right span{ /*Cor do nome da empresa no rodapé */
+    font-weight: bold;
+    color: rgb(93, 190, 235);    
+}

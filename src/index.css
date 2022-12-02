@@ -1,0 +1,11 @@
+*{ /* Aqui nós zeramos o padding a margin para ficar mais organizado. E o box-sizing é para o que criarmos nao sobrepor outros elementos*/
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box ;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html, body, #root{
+  background-color: #efefef;
+  height: 100%; /* Altura dos elementos marcados */
+}

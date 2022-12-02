@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /*Espaçamento entre os itens do Navbar */
+    background-color: #222; /*Cor do Navbar */
+    padding: 1em;
+}
+
+.list {
+    display: flex;
+    list-style: none; /* Tira a bolinha que identifica o item da lista */
+    align-items: center;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.item a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: rgb(93, 190, 235);
+}

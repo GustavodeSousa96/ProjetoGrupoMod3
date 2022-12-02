@@ -1,0 +1,29 @@
+.home_container {
+    width: 100%; /*Para trabalhar com 100% da section*/
+    display: flex;
+    flex-direction: column; /*Sistema de colunas, para poder colocar um item abaixo do outro  */
+    align-items: center; /*Alinhamento vertical*/
+    justify-content: center; /*Alinhamento horizontal*/
+    padding: 4em;
+}
+
+.home_container h1 { /* estilo do h1 dentro da classe home_container */
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.home_container h1 span {
+    color: rgb(93, 190, 235);
+    padding: 0 .2em;
+    background-color: #222;
+}
+
+.home_container p { /* estilo do p dentro da classe home_container */
+    margin-bottom: 1.5em;
+    color: #7b7b7b;
+}
+
+.home_container img { /* estilo da img dentro da classe home_container */
+    width: 350px;
+    margin: 2em 0;
+}
