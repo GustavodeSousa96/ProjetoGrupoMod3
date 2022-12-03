@@ -7,8 +7,8 @@ function Imoveis() {
     <div className={styles.imoveis_container}>
       <h1>Imóveis</h1>
       <p>Aqui você pode consultar os imóveis cadastrados, incluir, editar e deletar os que já foram vendidos.</p>
-      <p>Formulário</p>
-      <ProjectForm />
+      
+      <ProjectForm btnText={"Cadastrar imóvel"} /> {/*Essa prop(btnText) irá mudar para de acordo com o método. Esse método será um POST. */}
     </div>
   );
 }

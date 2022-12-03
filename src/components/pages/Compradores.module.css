@@ -1,0 +1,13 @@
+.compradores_container {
+    width: 450px;
+    margin: 0 auto; /*Usado para centralizar o container na tela */
+    padding: 3em; /*Espaçamento interno do conteúdo */
+  }
+  
+.compradores_container h1 {
+margin-bottom: 0.5em; /*Para afastar o parágrafo que está embaixo desse título*/
+}
+
+.compradores_container p {
+color: #7b7b7b;
+}

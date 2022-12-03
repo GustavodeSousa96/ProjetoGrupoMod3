@@ -18,15 +18,18 @@
 
 .social_list li:hover {
   /*Cor que muda ao passar o mouse nos ícones */
-  .home_container {
-    width: 100%; /*Para trabalhar com 100% da section*/
-    display: flex;
-    flex-direction: column; /*Sistema de colunas, para poder colocar um item abaixo do outro  */
-    align-items: center; /*Alinhamento vertical*/
-    justify-content: center; /*Alinhamento horizontal*/
-    padding: 4em;
-  }
+  color: rgb(93, 190, 235);
 }
+
+.home_container {
+  width: 100%; /*Para trabalhar com 100% da section*/
+  display: flex;
+  flex-direction: column; /*Sistema de colunas, para poder colocar um item abaixo do outro  */
+  align-items: center; /*Alinhamento vertical*/
+  justify-content: center; /*Alinhamento horizontal*/
+  padding: 4em;
+}
+
 
 .social_list svg {
   /*Tamanho dos ícones */

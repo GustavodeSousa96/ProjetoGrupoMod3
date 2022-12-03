@@ -9,17 +9,17 @@ function ProjectForm({btnText}) {
     <form className={styles.form}> 
       <Input 
         type='text'
-        text='Endereço do imóvel'
+        text='Nome do(a) cliente'
         name='name'
-        placeholder='Insira o endereço do imóvel'
+        placeholder='Insira o nome aqui'
       />
-      <Input
+      <Input 
         type='number'
-        text='Valor do imóvel'
-        name='name'
-        placeholder='Insira o valor do imóvel'
-      />
-      <Select name='category_id' text='Selecione o tipo de imóvel ' />
+        text='Idade'
+        name='name' 
+        placeholder='Insira a idade'
+      /> {/*Tentar mudar idade para data de nascimento, utilizando máscara(dd/mm/aaaa) */}
+      <Select name='category_id' text='TESTE' />
       <SubmitButton text={btnText} />
     </form>
   );
