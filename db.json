@@ -1,0 +1,89 @@
+{
+    "vendedores": [
+      {
+        "id": 1,
+        "nome": "Augusto Silveira",
+        "idade": 37,
+        "ano-admissao": 2008,
+        "media": 3
+      },
+      {
+        "id": 2,
+        "nome": "Angela Dutra",
+        "idade": 28,
+        "ano-admissao": 2017,
+        "media": 4
+      },
+      {
+        "id": 3,
+        "nome": "Alberto Duarte",
+        "idade": 42,
+        "ano-admissao": 2005,
+        "media": 6
+      },
+      {
+        "id": 4,
+        "nome": "Bruno Silva",
+        "idade": 25,
+        "ano-admissao": 2019,
+        "media": 2
+      }
+    ],
+    "imovel": [
+      {
+        "id": 1,
+        "tipo": "Casa",
+        "comodos": 10,
+        "endereco": "Barra da Tijuca",
+        "preco": 1000000,
+        "foto": "Adicionar foto aqui"
+      },
+      {
+        "id": 2,
+        "tipo": "Apartamento",
+        "comodos": 7,
+        "endereco": "Recreio dos Bandeirantes",
+        "preco": 700000,
+        "foto": "Adicionar foto aqui"
+      },
+      {
+        "id": 3,
+        "tipo": "Terreno",
+        "comodos": 5,
+        "endereco": "Leblon",
+        "preco": 1000000,
+        "foto": "Adicionar foto aqui"
+      }
+     
+    ],
+    "compradores": [
+      {
+        "id": 1,
+        "nome": "José Roberto",
+        "idade": 49,
+        "entrada": 200000,
+        "imovelId": 1
+      },
+      {
+        "id": 2,
+        "nome": "Maitê Moura",
+        "idade": 38,
+        "entrada": 150000,
+        "imovelId": 2
+      },
+      {
+        "id": 3,
+        "nome": "Carla Donato",
+        "idade": 35,
+        "entrada": 300000,
+        "imovelId": 3
+      },
+      {
+        "id": 4,
+        "nome": "Aldair Silva",
+        "idade": 56,
+        "entrada": 600000,
+        "imovelId": 4
+      }
+    ]
+  }
