@@ -2,6 +2,7 @@
     "vendedores": [
       {
         "id": 1,
+        "tipo": "Recursos Humanos",
         "nome": "Augusto Silveira",
         "idade": 37,
         "ano-admissao": 2008,
@@ -9,6 +10,7 @@
       },
       {
         "id": 2,
+        "tipo": "Vendedor",
         "nome": "Angela Dutra",
         "idade": 28,
         "ano-admissao": 2017,
@@ -16,6 +18,7 @@
       },
       {
         "id": 3,
+        "tipo": "Auxiliar de Serviços Gerais",
         "nome": "Alberto Duarte",
         "idade": 42,
         "ano-admissao": 2005,
@@ -23,6 +26,7 @@
       },
       {
         "id": 4,
+        "tipo": "Atendimento ao cliente",
         "nome": "Bruno Silva",
         "idade": 25,
         "ano-admissao": 2019,
@@ -59,6 +63,7 @@
     "compradores": [
       {
         "id": 1,
+        "tipo":"Na planta",
         "nome": "José Roberto",
         "idade": 49,
         "entrada": 200000,
@@ -66,6 +71,7 @@
       },
       {
         "id": 2,
+        "tipo":"Médio padrão",
         "nome": "Maitê Moura",
         "idade": 38,
         "entrada": 150000,
@@ -73,6 +79,7 @@
       },
       {
         "id": 3,
+        "tipo":"Alto padrão",
         "nome": "Carla Donato",
         "idade": 35,
         "entrada": 300000,
@@ -80,6 +87,7 @@
       },
       {
         "id": 4,
+        "tipo":"Luxo",
         "nome": "Aldair Silva",
         "idade": 56,
         "entrada": 600000,

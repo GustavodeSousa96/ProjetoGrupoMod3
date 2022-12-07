@@ -30,18 +30,27 @@ function Navbar() {
     but hey, it's pure CSS magic.
     --> */}
           <ul className={styles.menu}>
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#">
-              <li>Imoveis</li>
-            </a>
-            <a href="#">
-              <li>Clientes</li>
-            </a>
-            <a href="#">
-              <li>Funcionários</li>
-            </a>
+          <li className={styles.item}>
+            {' '}
+            <Link exacted to="/">
+              <img src={logo} alt="Rio Moveis logotipo" />
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link exacted to="/">
+              Home
+            </Link>{' '}
+          </li>{' '}
+          {/* Serve como ancora */}
+          <li className={styles.item}>
+            <Link to="/imoveis">Imoveis</Link>
+          </li>
+          <li className={styles.item}>
+            <Link to="/compradores">Clientes</Link>
+          </li>
+          <li className={styles.item}>
+            <Link to="/vendedores">Funcionários</Link>
+          </li>
           </ul>
         </div>
 
