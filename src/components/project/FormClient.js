@@ -6,8 +6,9 @@ import SubmitButton from '../form/SubmitButton';
 
 import styles from './ProjectForm.module.css'
 
-function FormClient({btnText}) {
+function FormClient({handleSubmit, btnText, compradoresData}) {
   const [categories, setCategories] = useState([])
+  const [compradores, setCompradores] = useState(compradoresData || {})
 
   useEffect(() => {
     fetch('http://localhost:5000/compradores', {
@@ -23,24 +24,68 @@ function FormClient({btnText}) {
   .catch((err)=> console.log(err))
   }, [])  
 
+  const submit = (e) => {
+    e.preventDefault()
+    handleSubmit(compradores)  // Quando duplicar alterar aqui p/ vendedores ou compradores
+  }
+
+  function handleChange(e) {
+    setCompradores({...compradores, [e.target.name]: e.target.value}) // Quando duplicar alterar imovel p/ vendedores ou compradores
+   
+  }
+
+  function handleCategory(e) {
+    setCompradores({
+      ...compradores, // Quando duplicar alterar imovel p/ vendedores ou compradores
+      category: {
+        id: e.target.value,
+        tipo:e.target.options[e.target.selectedIndex].text,
+      },
+    })
+    
+  }
+
   return (
-    <form className={styles.form}> 
+    <form onSubmit={submit} className={styles.form}> 
       <Input 
         type='text'
-        text='Nome do(a) cliente'
-        name='name'
+        text='Nome completo do(a) cliente'
+        name='nome'
         placeholder='Insira o nome aqui'
+        handleOnChange={handleChange}
+        value={compradores.name ? compradores.name : ''}
       />
       <Input 
         type='number'
-        text='Idade'
-        name='name' 
+        text='Data de nascimento'
+        name='nascimento' 
         placeholder='Insira a idade'
+        handleOnChange={handleChange}
+        value={compradores.nascimento ? compradores.nascimento : ''}
       /> {/*Tentar mudar idade para data de nascimento, utilizando máscara(dd/mm/aaaa) */}
+      <Input 
+        type='number'
+        text='CPF'
+        name='cpf'
+        placeholder='Insira o CPF aqui'
+        handleOnChange={handleChange}
+        value={compradores.cpf ? compradores.cpf : ''}
+      />
+      <Input 
+        type='number'
+        text='RG'
+        name='rg'
+        placeholder='Insira o RG aqui'
+        handleOnChange={handleChange}
+        value={compradores.rg ? compradores.rg : ''}
+      />
       <Select 
       name='category_id' 
       text='Selecione o tipo de imóvel '
-      options={categories} />
+      options={categories}
+      handleOnChange={handleCategory}
+      value={compradores.category ? compradores.category.id : ''}
+       />
       <SubmitButton text={btnText} />
     </form>
   );

@@ -53,21 +53,10 @@
     {
       "id": 3,
       "tipo": "Terreno",
-      "comodos": 5,
+      "comodos": 0,
       "endereco": "Leblon",
       "preco": 1000000,
       "foto": "Adicionar foto aqui"
-    },
-    {
-      "name": "teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Apartamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
     }
   ],
   "compradores": [

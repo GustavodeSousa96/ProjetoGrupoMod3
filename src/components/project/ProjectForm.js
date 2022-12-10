@@ -26,20 +26,20 @@ function ProjectForm({handleSubmit, btnText, imovelData}) { // Talvez mudar proj
 
   const submit = (e) => {
     e.preventDefault()
-    handleSubmit(imovel)  // Talvez mudar project para imovel
+    handleSubmit(imovel)  // Quando duplicar alterar aqui p/ vendedores ou compradores
   }
 
   function handleChange(e) {
-    setImovel({...imovel, [e.target.name]: e.target.value})
+    setImovel({...imovel, [e.target.name]: e.target.value}) // Quando duplicar alterar imovel p/ vendedores ou compradores
    
   }
 
   function handleCategory(e) {
     setImovel({
-      ...imovel,
+      ...imovel, // Quando duplicar alterar imovel p/ vendedores ou compradores
       category: {
         id: e.target.value,
-        name:e.target.options[e.target.selectedIndex].text,
+        tipo:e.target.options[e.target.selectedIndex].text,
       },
     })
     
@@ -49,11 +49,59 @@ function ProjectForm({handleSubmit, btnText, imovelData}) { // Talvez mudar proj
     <form onSubmit={submit} className={styles.form}> 
       <Input 
         type='text'
-        text='Endereço do imóvel'
-        name='name'
-        placeholder='Insira o endereço do imóvel'
+        text='CEP'
+        name='cep'
+        placeholder='Insira o CEP do imóvel'
         handleOnChange={handleChange}
-        value={imovel.name ? imovel.name : ''}
+        value={imovel.cep ? imovel.cep : ''}
+      />
+      <Input 
+        type='text'
+        text='Logradouro'
+        name='logradouro'
+        placeholder='Insira o logradouro do imóvel'
+        handleOnChange={handleChange}
+        value={imovel.logradouro ? imovel.logradouro : ''}
+      />
+      <Input
+        type='number'
+        text='Número'
+        name='numero'
+        placeholder='Insira o numero do imóvel'
+        handleOnChange={handleChange}
+        value={imovel.numero ? imovel.numero : ''}
+      />
+      <Input
+        type='text'
+        text='Complemento'
+        name='complemento'
+        placeholder='Complemento'
+        handleOnChange={handleChange}
+        value={imovel.complemento ? imovel.complemento : ''}
+      />
+      <Input 
+        type='text'
+        text='Bairro'
+        name='bairro'
+        placeholder='Insira o bairro do imóvel'
+        handleOnChange={handleChange}
+        value={imovel.bairro ? imovel.bairro : ''}
+      />
+      <Input 
+        type='text'
+        text='Cidade'
+        name='cidade'
+        placeholder='Insira a cidade do imóvel'
+        handleOnChange={handleChange}
+        value={imovel.cidade ? imovel.cidade : ''}
+      />
+       <Input 
+        type='text'
+        text='Estado'
+        name='estado'
+        placeholder='Insira a estado do imóvel'
+        handleOnChange={handleChange}
+        value={imovel.estado ? imovel.estado : ''}
       />
       <Input
         type='number'

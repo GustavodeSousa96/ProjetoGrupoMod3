@@ -12,7 +12,7 @@ function Imoveis() {
 
   function createPost(project){ // Talvez mudar project para imovel
 
-    //initialize cost and services
+    //initialize cost and services - Por enquanto os dados abaixo ñ estao sendo utilizados
     project.cost = 0
     project.services = []
 
