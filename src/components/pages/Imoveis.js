@@ -4,11 +4,10 @@ import ProjectForm from '../project/ProjectForm'; // Formulário dentro da pasta
 
 import styles from './Imoveis.module.css'; // CSS da página
 
-import DashImoveis from './DashImoveis';
 
 function Imoveis() {
 
-  const navigate = useNavigate() //useHistory foi substituído por useNavigate()
+  const navigate = useNavigate(); //useHistory foi substituído por useNavigate()
 
   function createPost(project){ // Talvez mudar project para imovel
 
@@ -27,7 +26,7 @@ function Imoveis() {
       .then((data) => {
       console.log(data)
       //redirect
-      navigate.push('/dashimoveis', {message:'Imovel cadastrado com sucesso!'})
+      navigate('/dashimoveis', {message:'Imovel cadastrado com sucesso!'}) //
     })
     .catch((err) => console.log(err))
 

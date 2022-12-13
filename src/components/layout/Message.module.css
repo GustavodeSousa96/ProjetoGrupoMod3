@@ -1,0 +1,27 @@
+/*ATENÇÃO: Mesmo seguindo o passo a passo, a mensagem não aparece na tela ao incluir um novo imóvel */
+
+.message {
+    width: 20%;
+    padding: 1em;
+    border:1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+
+
+/* O tipo da mensagem vai definir a configuração css dela */
+.success {
+    color: #155724;
+    background-color: #D4EDDA;
+    border: #C3E6CB;
+}
+
+.error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border: #f5c6cb;
+}
+
+/* Se der: incluir outros tipos de mensagens(exemplo: msg de alerta)*/

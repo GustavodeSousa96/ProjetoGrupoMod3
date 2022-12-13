@@ -25,7 +25,7 @@ function Vendedores() {
       .then((data) => {
       console.log(data)
       //redirect
-      navigate.push('/dashimoveis', {message:'Imovel cadastrado com sucesso!'})
+      navigate('/dashvendedores', {message:'Imovel cadastrado com sucesso!'})
     })
     .catch((err) => console.log(err))
 
