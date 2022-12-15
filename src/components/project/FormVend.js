@@ -3,7 +3,6 @@ import{useState, useEffect} from 'react'
 import Input from '../form/Input'
 import Select from '../form/Select'
 import SubmitButton from '../form/SubmitButton';
-import Vendedores from '../pages/Vendedores';
 
 import styles from './ProjectForm.module.css';
 
@@ -57,11 +56,11 @@ function FormVend({handleSubmit, btnText, vendedoresData}) {
       />
       <Input 
         type='number'
-        text='Data de nascimento'
-        name='nascimento' 
+        text='Idade'
+        name='idade' 
         placeholder='Insira a idade'
         handleOnChange={handleChange}
-        value={vendedores.nascimento ? vendedores.nascimento : ''}
+        value={vendedores.idade ? vendedores.idade : ''}
       /> {/*Tentar mudar idade para data de nascimento, utilizando máscara(dd/mm/aaaa) */}
       <Select 
       name='category_id' 

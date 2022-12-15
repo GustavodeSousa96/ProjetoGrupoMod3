@@ -47,6 +47,15 @@ function ProjectForm({handleSubmit, btnText, imovelData}) { // Talvez mudar proj
 
   return ( // incluído tbm o onSubmit (precisa duplicar nos outros forms)
     <form onSubmit={submit} className={styles.form}> 
+
+      <Input 
+        type='number'
+        text='RGI'
+        name='rgi'
+        placeholder='Insira o RGI do imóvel'
+        handleOnChange={handleChange}
+        value={imovel.rgi ? imovel.rgi : ''}
+      />
       <Input 
         type='text'
         text='CEP'
