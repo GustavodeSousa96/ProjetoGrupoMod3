@@ -6,6 +6,8 @@ import Imoveis from './components/pages/Imoveis';
 import Vendedores from './components/pages/Vendedores';
 
 import DashImoveis from './components/pages/DashImoveis';
+import DashCompradores from './components/pages/DashCompradores';
+import DashVendedores from './components/pages/DashVendedores';
 
 //Aqui o import do layout
 import Container from './components/layout/Container';
@@ -26,6 +28,8 @@ function App() {
           <Route path="/compradores" element={<Clientes />} />
           <Route path="/vendedores" element={<Vendedores />} />
           <Route path="/dashimoveis" element={<DashImoveis />} />
+          <Route path="/dashcompradores" element={<DashCompradores />} />
+          <Route path="/dashvendedores" element={<DashVendedores />} />
         </Routes>
       </Container>
       {/*No vídeo o Container fica por dentro de Routes, mas nao estava indo, só entrou quando coloquei fora, sendo envolvido por Router.*/}

@@ -50,7 +50,7 @@ function FormClient({handleSubmit, btnText, compradoresData}) {
       <Input 
         type='text'
         text='Nome completo do(a) cliente'
-        name='nome'
+        name='name'
         placeholder='Insira o nome aqui'
         handleOnChange={handleChange}
         value={compradores.name ? compradores.name : ''}

@@ -43,14 +43,15 @@ function Navbar() {
           </li>{' '}
           {/* Serve como ancora */}
           <li className={styles.item}>
-            <Link to="/imoveis">Imoveis</Link>
+            <Link to="/dashimoveis">Imoveis</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/compradores">Clientes</Link>
+            <Link to="/dashcompradores">Clientes</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/vendedores">Funcionários</Link>
+            <Link to="/dashvendedores">Funcionários</Link>
           </li>
+          
           </ul>
         </div>
 
@@ -68,13 +69,13 @@ function Navbar() {
           </li>{' '}
           {/* Serve como ancora */}
           <li className={styles.item}>
-            <Link to="/imoveis">Imoveis</Link>
+            <Link to="/dashimoveis">Imoveis</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/compradores">Clientes</Link>
+            <Link to="/dashcompradores">Clientes</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/vendedores">Funcionários</Link>
+            <Link to="/dashvendedores">Funcionários</Link>
           </li>
         </ul>
       </Container>
