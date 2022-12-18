@@ -7,8 +7,24 @@ import SubmitButton from '../form/SubmitButton';
 import styles from './ProjectForm.module.css'
 
 function ProjectForm({handleSubmit, btnText, imovelData}) { // Talvez mudar projectData para imovelData
-  const [categories, setCategories] = useState([])
   const [imovel, setImovel] = useState(imovelData || {})
+  const optionsForm = [
+    {
+      id: 1,
+      value: 'apartamento',
+      label: 'Apartamento'
+    },
+    {
+      id: 2,
+      value: 'casa',
+      label: 'Casa'
+    },
+    {
+      id: 3,
+      value: 'terreno',
+      label: 'Terreno'
+    },
+  ]
 
   useEffect(() => {
     fetch('http://localhost:5000/imovel', {
@@ -16,13 +32,7 @@ function ProjectForm({handleSubmit, btnText, imovelData}) { // Talvez mudar proj
     headers: {
       'Content-type': 'application/json'
     }
-  })
-  .then((resp) => resp.json())
-  .then((data)=>{
-    setCategories(data)
-  })
-  .catch((err)=> console.log(err))
-  }, [])
+  })}, [])
 
   const submit = (e) => {
     e.preventDefault()
@@ -123,7 +133,7 @@ function ProjectForm({handleSubmit, btnText, imovelData}) { // Talvez mudar proj
       <Select 
       name='category_id' 
       text='Selecione o tipo de imóvel '
-      options={categories}
+      options={optionsForm}
       handleOnChange={handleCategory}
       value={imovel.category ? imovel.category.id : ''}
        />
