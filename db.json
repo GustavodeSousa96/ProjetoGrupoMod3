@@ -83,29 +83,6 @@
       "complemento": "Prox a padaria",
       "bairro": "Barra da Tijuca",
       "budget": "300000"
-    },
-    {
-      "rgi": "3020",
-      "cep": "3020",
-      "logradouro": "3020",
-      "numero": "3020",
-      "complemento": "3020",
-      "bairro": "3020",
-      "cidade": "3020",
-      "estado": "3020",
-      "budget": "3020",
-      "category": {
-        "id": "apartamento",
-        "tipo": "Apartamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "compradores": [
