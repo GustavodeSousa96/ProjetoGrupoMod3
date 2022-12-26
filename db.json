@@ -31,17 +31,6 @@
       "idade": 25,
       "ano-admissao": 2019,
       "media": 2
-    },
-    {
-      "nome": "Gustavo",
-      "idade": "26",
-      "category": {
-        "id": "1",
-        "tipo": "Recursos Humanos"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "imovel": [
@@ -116,6 +105,7 @@
       "nome": "Aldair Silva",
       "idade": 56,
       "entrada": 600000,
+      "cpf": "asdasd",
       "imovelId": 4
     }
   ]

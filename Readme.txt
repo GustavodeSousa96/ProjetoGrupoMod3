@@ -9,15 +9,12 @@ Bibliotecas para baixar após ter feito o clone:
 - npm install uuid: biblioteca que cria id para gente a cada dado inserido.
 - 
 
-
-
 2º Na pasta src só ficaram os arquivos App.js, index.css e index.js
 
 
-Data: 10/12/2022
-Quando retomar:
+--------------------------------- ANATAÇÕES IMPORTANTES ------------------------------------
+
+Pontos a acertar:
+
 - Aumentar os tópicos dos formulários de Compradores e Vendedores;
-- Resolver o problema sobre o select aumentar uma opcao sempre que adicionado um POST
-	Obs.:Vai ser preciso achar um modo de limitar a quantidade de opções que aparecem no Select.
-	     Pois toda vez que é dado um POST, entra um objeto vazio nas opções
--
+- Posicionar os cards das pags. Imoveis, Clientes e Funcionários um ao lado do outro;

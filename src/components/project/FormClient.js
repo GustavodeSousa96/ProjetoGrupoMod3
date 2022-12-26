@@ -10,6 +10,24 @@ function FormClient({handleSubmit, btnText, compradoresData}) {
   const [categories, setCategories] = useState([])
   const [compradores, setCompradores] = useState(compradoresData || {})
 
+  const optionsForm = [
+    {
+      id: 1,
+      value: 'apartamento',
+      label: 'Apartamento'
+    },
+    {
+      id: 2,
+      value: 'casa',
+      label: 'Casa'
+    },
+    {
+      id: 3,
+      value: 'terreno',
+      label: 'Terreno'
+    },
+  ]
+
   useEffect(() => {
     fetch('http://localhost:5000/compradores', {
     method:"GET",
@@ -82,7 +100,7 @@ function FormClient({handleSubmit, btnText, compradoresData}) {
       <Select 
       name='category_id' 
       text='Selecione o tipo de imóvel '
-      options={categories}
+      options={optionsForm}
       handleOnChange={handleCategory}
       value={compradores.category ? compradores.category.id : ''}
        />

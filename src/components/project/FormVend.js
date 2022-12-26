@@ -9,6 +9,30 @@ import styles from './ProjectForm.module.css';
 function FormVend({handleSubmit, btnText, vendedoresData}) {
   const [categories, setCategories] = useState([])
   const [vendedores, setVendedores] = useState(vendedoresData || {})
+
+  const optionsForm = [
+    {
+      id: 1,
+      value: 'vendedor',
+      label: 'Vendedor'
+    },
+    {
+      id: 2,
+      value: 'gr',
+      label: 'Gerente'
+    },
+    {
+      id: 3,
+      value: 'asg',
+      label: 'Auxiliar de Serviçoes Gerais'
+    },
+    {
+      id: 4,
+      value: 'dp',
+      label: 'Departamento Pessoal'
+    },
+  ]
+
   useEffect(() => {
     fetch('http://localhost:5000/vendedores', {
     method:"GET",
@@ -65,7 +89,7 @@ function FormVend({handleSubmit, btnText, vendedoresData}) {
       <Select 
       name='category_id' 
       text='Selecione o cargo '
-      options={categories}
+      options={optionsForm}
       handleOnChange={handleCategory}
       value={vendedores.category ? vendedores.category.id : ''}
       />
