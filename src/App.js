@@ -13,6 +13,9 @@ import DashVendedores from './components/pages/DashVendedores';
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import Imovel from './components/pages/Imovel';
+import PutCompradores from './components/pages/PutCompradores';
+import PutVendedores from './components/pages/PutVendedores';
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path="/dashimoveis" element={<DashImoveis />} />
           <Route path="/dashcompradores" element={<DashCompradores />} />
           <Route path="/dashvendedores" element={<DashVendedores />} />
+          <Route path="/imovel/:id" element={<Imovel/>} />{/*pag do metodo put*/}
+          <Route path="/putcompradores/:id" element={<PutCompradores/>} /> {/*pag do metodo put*/}
+          <Route path="/putvendedores/:id" element={<PutVendedores/>} /> {/*pag do metodo put*/}
         </Routes>
       </Container>
       {/*No vídeo o Container fica por dentro de Routes, mas nao estava indo, só entrou quando coloquei fora, sendo envolvido por Router.*/}

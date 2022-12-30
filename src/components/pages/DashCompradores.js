@@ -60,6 +60,7 @@ function DashCompradores() {
           nome={project.nome}
           idade={project.idade}
           interesse={project.tipo}
+          cpf={project.cpf}
           handleRemove={removeProject}
           />)}
           {!removeLoading && <Loading />}

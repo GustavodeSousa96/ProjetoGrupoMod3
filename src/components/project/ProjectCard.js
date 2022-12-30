@@ -17,7 +17,7 @@ function ProjectCard({id, name, rgi, cidade, preco, estado, handleRemove}){
          <p className={styles.category_text}><strong>Cidade:</strong> {cidade} <strong> UF:</strong> {estado}</p>
          <p className={styles.category_text}><strong>Preço:</strong> R${preco},00 </p>
          <div className={styles.project_card_actions}>
-            <Link to="/">
+            <Link to={`/imovel/${id}`}>
                 <BsPencil /> Editar
             </Link>
             <button onClick={remove}>

@@ -15,7 +15,7 @@ function ProjectCard({id, nome, admissao, idade, cargo, handleRemove}){
          <p className={styles.category_text}><strong>Idade:</strong> {idade}</p>
          <p className={styles.category_text}><strong>Salário:</strong></p>
          <div className={styles.project_card_actions}>
-            <Link to="/">
+            <Link to={`/putvendedores/${id}`}>
                 <BsPencil /> Editar
             </Link>
             <button onClick={remove}>

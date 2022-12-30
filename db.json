@@ -3,10 +3,11 @@
     {
       "id": 1,
       "tipo": "Recursos Humanos",
-      "nome": "Augusto Silveira",
+      "nome": "Renata Albuquerque",
       "idade": 37,
       "ano-admissao": 2008,
-      "media": 3
+      "salario": 3050,
+      "cpf": 4901457796
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "nome": "Angela Dutra",
       "idade": 28,
       "ano-admissao": 2017,
-      "media": 4
+      "salario": 2550,
+      "cpf": 854679562
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "nome": "Alberto Duarte",
       "idade": 42,
       "ano-admissao": 2005,
-      "media": 6
+      "salario": 1500,
+      "cpf": 1216479632
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "nome": "Bruno Silva",
       "idade": 25,
       "ano-admissao": 2019,
-      "media": 2
+      "salario": 1500,  
+      "cpf": 9874545985
     }
   ],
   "imovel": [
@@ -81,7 +85,8 @@
       "nome": "José Roberto",
       "idade": 49,
       "entrada": 200000,
-      "imovelId": 1
+      "imovelId": 1,
+      "cpf": 4901457796
     },
     {
       "id": 2,
@@ -89,7 +94,8 @@
       "nome": "Maitê Moura",
       "idade": 38,
       "entrada": 150000,
-      "imovelId": 2
+      "imovelId": 2,
+      "cpf": 789456123
     },
     {
       "id": 3,
@@ -97,7 +103,8 @@
       "nome": "Carla Donato",
       "idade": 35,
       "entrada": 300000,
-      "imovelId": 3
+      "imovelId": 3,
+      "cpf": 456789123
     },
     {
       "id": 4,
@@ -105,8 +112,8 @@
       "nome": "Aldair Silva",
       "idade": 56,
       "entrada": 600000,
-      "cpf": "asdasd",
-      "imovelId": 4
+      "imovelId": 4,
+      "cpf": 123456789
     }
   ]
 }
