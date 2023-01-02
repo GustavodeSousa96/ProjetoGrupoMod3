@@ -33,8 +33,19 @@
       "nome": "Bruno Silva",
       "idade": 25,
       "ano-admissao": 2019,
-      "salario": 1500,  
+      "salario": 1500,
       "cpf": 9874545985
+    },
+    {
+      "nome": "Gustavo de Sousa",
+      "idade": "30",
+      "category": {
+        "id": "vendedor",
+        "tipo": "Vendedor"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "imovel": [
@@ -76,6 +87,24 @@
       "complemento": "Prox a padaria",
       "bairro": "Barra da Tijuca",
       "budget": "300000"
+    },
+    {
+      "rgi": "TESTE123456",
+      "cep": "23689475",
+      "logradouro": "Rua Amaral",
+      "numero": "500",
+      "complemento": "Prox a igreja",
+      "bairro": "Campo Grande",
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ",
+      "budget": "20",
+      "category": {
+        "id": "apartamento",
+        "tipo": "Apartamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "compradores": [
@@ -113,7 +142,8 @@
       "idade": 56,
       "entrada": 600000,
       "imovelId": 4,
-      "cpf": 123456789
+      "cpf": "12345678910",
+      "name": ""
     }
   ]
 }

@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
+import FormClient from '../project/FormClient'
 
 function PutCompradores () {
     const {id} = useParams()
@@ -29,6 +30,24 @@ function PutCompradores () {
   }, 300) // Inserir esse Timeout nos outros Puts
     }, [id])
     
+
+    function editPost(compradores) { // Alterar onde está escrito imóvel para vendedores ou compradores nas outras páginas
+      fetch(`http://localhost:5000/compradores/${compradores.id}`, {
+        method:'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(compradores),
+      })
+      .then(resp => resp.json())
+      .then((data) => {
+        setCompradores(data)
+        setShowProjectForm(false)
+        //mensagem
+      })
+      .catch(err => console.log(err))
+    }
+
     function toggleProjectForm() {
       setShowProjectForm(!showProjectForm)
     }
@@ -59,7 +78,10 @@ function PutCompradores () {
                   </div>
                 ) : (
                   <div className={styles.project_info}>
-                    <p>Detalhes do Cliente</p>
+                     <FormClient 
+                    handleSubmit={editPost} 
+                    btnText='Concluir edição'
+                    compradoresData={compradores}/>  {/* Alterar onde está escrito imovel e imovelData p/ vendedores ou compradores*/}
                   </div>
                 )}
             </div>

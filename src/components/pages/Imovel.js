@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
+import ProjectForm from '../project/ProjectForm'
 
 function Imovel () {
     const {id} = useParams()
@@ -28,6 +29,24 @@ function Imovel () {
     .catch(err => console.log)
     }, 300) // Inserir esse Timeout nos outros Puts
     }, [id])
+
+
+    function editPost(imovel) { // Alterar onde está escrito imóvel para vendedores ou compradores nas outras páginas
+      fetch(`http://localhost:5000/imovel/${imovel.id}`, {
+        method:'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(imovel),
+      })
+      .then(resp => resp.json())
+      .then((data) => {
+        setImovel(data)
+        setShowProjectForm(false)
+        //mensagem
+      })
+      .catch(err => console.log(err))
+    }
 
     function toggleProjectForm() {
       setShowProjectForm(!showProjectForm)
@@ -57,9 +76,12 @@ function Imovel () {
                   </div>
                 ) : (
                   <div className={styles.project_info}>
-                    <p>Detalhes do projeto</p>
+                    <ProjectForm 
+                    handleSubmit={editPost} 
+                    btnText='Concluir edição'
+                    imovelData={imovel}/>  {/* Alterar onde está escrito imovel e imovelData p/ vendedores ou compradores*/}
                   </div>
-                )}
+                )} 
             </div>
           </Container>
         </div>
