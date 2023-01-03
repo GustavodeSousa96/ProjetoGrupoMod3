@@ -79,6 +79,11 @@ function Navbar() {
           </li>
         </ul>
       </Container>
+
+      <div class="search-container">
+                <label for="search-input" class={styles.search_icon}></label>
+                <input type="text" class={styles.search_input} id="search-input" required />
+      </div>
     </nav>
   );
 }
