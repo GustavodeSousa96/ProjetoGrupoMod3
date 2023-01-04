@@ -86,6 +86,22 @@ function FormVend({handleSubmit, btnText, vendedoresData}) {
         handleOnChange={handleChange}
         value={vendedores.idade ? vendedores.idade : ''}
       /> {/*Tentar mudar idade para data de nascimento, utilizando máscara(dd/mm/aaaa) */}
+      <Input 
+        type='number'
+        text='CPF'
+        name='cpf'
+        placeholder='Insira o CPF aqui'
+        handleOnChange={handleChange}
+        value={vendedores.cpf ? vendedores.cpf : ''}
+      />
+      <Input 
+        type='number'
+        text='RG'
+        name='rg'
+        placeholder='Insira o RG aqui'
+        handleOnChange={handleChange}
+        value={vendedores.rg ? vendedores.rg : ''}
+      />
       <Select 
       name='category_id' 
       text='Selecione o cargo '

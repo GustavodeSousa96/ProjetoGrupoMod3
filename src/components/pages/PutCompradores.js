@@ -61,7 +61,7 @@ function PutCompradores () {
             <div className={styles.details_container}>
               <h1> Nome: {compradores.nome}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
-                {!showProjectForm ? 'Editar dados do clinte' : 'Fechar'}
+                {!showProjectForm ? 'Editar dados do cliente' : 'Fechar'}
                 </button>
                 {!showProjectForm ? (
                   <div className={styles.project_info}>
@@ -72,7 +72,7 @@ function PutCompradores () {
                       <span> Idade: </span> {compradores.idade} anos
                     </p>
                     <p>
-                      <span> Valor disponível de ntrada: </span> R$ {compradores.entrada},00
+                      <span> Valor disponível de entrada: </span> R$ {compradores.entrada},00
                     </p>
                   
                   </div>

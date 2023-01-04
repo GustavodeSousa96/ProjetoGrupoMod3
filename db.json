@@ -7,7 +7,12 @@
       "idade": 37,
       "ano-admissao": 2008,
       "salario": 3050,
-      "cpf": 4901457796
+      "cpf": 4901457796,
+      "rg": "21524548754",
+      "category": {
+        "id": "vendedor",
+        "tipo": "Vendedor"
+      }
     },
     {
       "id": 2,
@@ -16,7 +21,8 @@
       "idade": 28,
       "ano-admissao": 2017,
       "salario": 2550,
-      "cpf": 854679562
+      "cpf": 854679562,
+      "rg": "64565498797"
     },
     {
       "id": 3,
@@ -25,7 +31,8 @@
       "idade": 42,
       "ano-admissao": 2005,
       "salario": 1500,
-      "cpf": 1216479632
+      "cpf": 1216479632,
+      "rg": "8978974656"
     },
     {
       "id": 4,
@@ -34,7 +41,8 @@
       "idade": 25,
       "ano-admissao": 2019,
       "salario": 1500,
-      "cpf": 9874545985
+      "cpf": 9874545985,
+      "rg": "341564564"
     },
     {
       "nome": "Gustavo de Sousa",
@@ -115,7 +123,7 @@
       "idade": 49,
       "entrada": 200000,
       "imovelId": 1,
-      "cpf": 4901457796
+      "cpf": "4901457797"
     },
     {
       "id": 2,
@@ -144,6 +152,20 @@
       "imovelId": 4,
       "cpf": "12345678910",
       "name": ""
+    },
+    {
+      "nome": "Gustavo de Sousa",
+      "idade": "30",
+      "cpf": ".654554554564",
+      "rg": "21524548754",
+      "category": {
+        "id": "apartamento",
+        "tipo": "Apartamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5,
+      "entrada": "50000"
     }
   ]
 }
