@@ -76,10 +76,10 @@ function FormClient({handleSubmit, btnText, compradoresData}) {
       <Input 
         type='number'
         text='Data de nascimento'
-        name='idade' 
+        name='nascimento' 
         placeholder='Insira a idade'
         handleOnChange={handleChange}
-        value={compradores.idade ? compradores.idade : ''}
+        value={compradores.nascimento ? compradores.nascimento : ''}
       /> {/*Tentar mudar idade para data de nascimento, utilizando máscara(dd/mm/aaaa) */}
       <Input 
         type='number'
@@ -96,14 +96,6 @@ function FormClient({handleSubmit, btnText, compradoresData}) {
         placeholder='Insira o RG aqui'
         handleOnChange={handleChange}
         value={compradores.rg ? compradores.rg : ''}
-      />
-      <Input 
-        type='number'
-        text='Entrada'
-        name='entrada'
-        placeholder='Insira o valor de entrada'
-        handleOnChange={handleChange}
-        value={compradores.entrada ? compradores.entrada : ''}
       />
       <Select 
       name='category_id' 

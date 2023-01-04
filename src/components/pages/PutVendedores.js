@@ -61,7 +61,7 @@ function PutVendedores () {
             <div className={styles.details_container}>
               <h1> Nome: {vendedores.nome}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
-                {!showProjectForm ? 'Editar dados do(a) funcionário(a)' : 'Fechar'}
+                {!showProjectForm ? 'Editar dados do clinte' : 'Fechar'}
                 </button>
                 {!showProjectForm ? (
                   <div className={styles.project_info}>

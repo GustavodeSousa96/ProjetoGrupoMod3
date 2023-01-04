@@ -8,11 +8,7 @@
       "ano-admissao": 2008,
       "salario": 3050,
       "cpf": 4901457796,
-      "rg": "21524548754",
-      "category": {
-        "id": "vendedor",
-        "tipo": "Vendedor"
-      }
+      "rg": "4645454646"
     },
     {
       "id": 2,
@@ -22,7 +18,7 @@
       "ano-admissao": 2017,
       "salario": 2550,
       "cpf": 854679562,
-      "rg": "64565498797"
+      "rg": "645454"
     },
     {
       "id": 3,
@@ -32,7 +28,7 @@
       "ano-admissao": 2005,
       "salario": 1500,
       "cpf": 1216479632,
-      "rg": "8978974656"
+      "rg": "45646545"
     },
     {
       "id": 4,
@@ -42,18 +38,7 @@
       "ano-admissao": 2019,
       "salario": 1500,
       "cpf": 9874545985,
-      "rg": "341564564"
-    },
-    {
-      "nome": "Gustavo de Sousa",
-      "idade": "30",
-      "category": {
-        "id": "vendedor",
-        "tipo": "Vendedor"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
+      "rg": "654464564567"
     }
   ],
   "imovel": [
@@ -123,7 +108,7 @@
       "idade": 49,
       "entrada": 200000,
       "imovelId": 1,
-      "cpf": "4901457797"
+      "cpf": 4901457796
     },
     {
       "id": 2,
@@ -154,18 +139,17 @@
       "name": ""
     },
     {
-      "nome": "Gustavo de Sousa",
-      "idade": "30",
-      "cpf": ".654554554564",
-      "rg": "21524548754",
+      "nome": "TEste",
+      "nascimento": "6546",
+      "cpf": "13897456745",
+      "rg": "asdasd",
       "category": {
         "id": "apartamento",
         "tipo": "Apartamento"
       },
       "cost": 0,
       "services": [],
-      "id": 5,
-      "entrada": "50000"
+      "id": 5
     }
   ]
 }
