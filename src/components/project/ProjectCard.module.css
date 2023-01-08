@@ -36,8 +36,10 @@
 
 .project_card_actions a,
 .project_card_actions button {
+    width: 100px;
     text-decoration: none;
     border: none;
+    border-radius: 4px;
     background-color: #FFF;
     color: #222;
     font-size: .9em;
@@ -61,9 +63,15 @@
     color: #1ba3cc;
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 425px) {
     .project_card {
         width: 90%;
         margin-bottom: 10px;
+    }
+
+    .project_card_actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
