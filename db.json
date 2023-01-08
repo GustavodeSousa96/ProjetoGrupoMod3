@@ -80,24 +80,6 @@
       "complemento": "Prox a padaria",
       "bairro": "Barra da Tijuca",
       "budget": "300000"
-    },
-    {
-      "rgi": "TESTE123456",
-      "cep": "23689475",
-      "logradouro": "Rua Amaral",
-      "numero": "500",
-      "complemento": "Prox a igreja",
-      "bairro": "Campo Grande",
-      "cidade": "Rio de Janeiro",
-      "estado": "RJ",
-      "budget": "20",
-      "category": {
-        "id": "apartamento",
-        "tipo": "Apartamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
     }
   ],
   "compradores": [
@@ -137,19 +119,6 @@
       "imovelId": 4,
       "cpf": "12345678910",
       "name": ""
-    },
-    {
-      "nome": "TEste",
-      "nascimento": "6546",
-      "cpf": "13897456745",
-      "rg": "asdasd",
-      "category": {
-        "id": "apartamento",
-        "tipo": "Apartamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ]
 }

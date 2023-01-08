@@ -52,6 +52,10 @@ function DashCompradores() {
      
      </div>
      {projectMessage && < Message type="success" msg={projectMessage} />}
+     {!removeLoading && <Loading />}
+          {removeLoading && compradores.length === 0 && (
+            <p>Não há imóveis cadastrados.</p>
+          )}
      <Container customClass='start'>
        {compradores.length > 0 && //Alterar as palavras imovel por vendedores e compradores
         compradores.map((project) =>// Aqui o nome project permanece, pois ele faz o link com o project.tipo
@@ -63,10 +67,6 @@ function DashCompradores() {
           cpf={project.cpf}
           handleRemove={removeProject}
           />)}
-          {!removeLoading && <Loading />}
-          {removeLoading && compradores.length === 0 && (
-            <p>Não há imóveis cadastrados.</p>
-          )}
       </Container>
     </div>
   )

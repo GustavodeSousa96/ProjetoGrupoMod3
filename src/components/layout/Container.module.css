@@ -3,11 +3,18 @@
 }
 
 .start {
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
 }
 
 .column {
   /* Vai trazer colunas para a nossa pagina(como se fosse FlexBox */
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media only screen and (max-device-width: 840px) {
+  .start {
+    grid-template-columns: 1fr;
+  }
 }

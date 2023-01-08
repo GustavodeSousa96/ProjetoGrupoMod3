@@ -2,8 +2,8 @@
     padding: 1em;
     border: 1px solid #7a7a7a;
     border-radius: 5px;
-    width:24%;
-    margin: 0.5%;
+    width: 85%;
+    margin: 5%;
 }
 
 .project_card h4{
@@ -59,4 +59,11 @@
 .project_card_actions button:hover {
     background-color: #222;
     color: #1ba3cc;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    .project_card {
+        width: 90%;
+        margin-bottom: 10px;
+    }
 }

@@ -65,6 +65,10 @@ function DashImoveis() {
      </div>
       {message && < Message type="success" msg={message} />}
       {projectMessage && < Message type="success" msg={projectMessage} />}
+      {!removeLoading && <Loading />}
+          {removeLoading && imovel.length === 0 && (
+            <p>Não há imóveis cadastrados.</p>
+          )}
       <Container customClass='start'>
        {imovel.length > 0 && //Alterar as palavras imovel por vendedores e compradores
         imovel.map((project) =>// Aqui o nome project permanece, pois ele faz o link com o project.tipo
@@ -77,10 +81,6 @@ function DashImoveis() {
           preco={project.budget}
           handleRemove={removeProject}
           />)}
-          {!removeLoading && <Loading />}
-          {removeLoading && imovel.length === 0 && (
-            <p>Não há imóveis cadastrados.</p>
-          )}
       </Container>
     </div>
   )

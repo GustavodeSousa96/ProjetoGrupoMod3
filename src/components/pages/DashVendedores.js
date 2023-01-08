@@ -53,6 +53,10 @@ function DashVendedores() {
      
      </div>
      {projectMessage && < Message type="success" msg={projectMessage} />}
+     {!removeLoading && <Loading />}
+        {removeLoading && vendedores.length === 0 && (
+          <p>Não há funcionários cadastrados.</p>
+        )}
      <Container customClass='start'>
        {vendedores.length > 0 && //Alterar as palavras imovel por vendedores e compradores
         vendedores.map((project) =>// Aqui o nome project permanece, pois ele faz o link com o project.tipo
@@ -63,10 +67,6 @@ function DashVendedores() {
           idade={project.idade}
           handleRemove={removeProject}
           />)}
-         {!removeLoading && <Loading />}
-        {removeLoading && vendedores.length === 0 && (
-          <p>Não há funcionários cadastrados.</p>
-        )}
       </Container>
     </div>
   )
