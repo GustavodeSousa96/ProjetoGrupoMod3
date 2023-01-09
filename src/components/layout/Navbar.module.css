@@ -28,6 +28,11 @@
   display: none;
 }
 
+.item img {
+  width: 90px;
+    height: auto;
+  }  
+
 /*                                             Barra de Pesquisa                                                          */
 
 .search_container {
