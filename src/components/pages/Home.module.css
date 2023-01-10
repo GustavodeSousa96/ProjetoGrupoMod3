@@ -8,35 +8,25 @@
 }
 
 .linha{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-}
-/*configuração da imagem e do texto*/
-.grid{
-  display: flex;
-  flex-wrap:wrap;
-  width: auto;
-  height: 100%;
-  justify-content: space-evenly;
-  margin: auto;
-  margin-bottom: 100px;
-  padding: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
 }
 
-.conteudo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: large;
-  text-align: start;
+/*configuração da imagem e do texto*/
+
+.conteudo img {
+  width: 20px;
 }
 
 .texto{
-  background-color: #8c6d46;
-  font-family: sans-serif ;
+  background-color: #252525;
+  font-family: sans-serif;
   font-size: 25px;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
 }
 
 .home_container h1 {
@@ -50,10 +40,13 @@
 
 .home_container h1 span {
     /* animação do span */
-    font-size: 6.25rem;
-    background: linear-gradient(-45deg, #3c3c3c ,#8c6d46,#a68953);
+    font-size: 2.25rem;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(243, 207, 0);
+    background: linear-gradient(-45deg, #302f2f ,#555454,#b8b6b5);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 7s ease infinite;
     height: 100vh;
   }
   
@@ -75,11 +68,47 @@
   /* estilo do p dentro da classe home_container */
   margin-top: 1.5em;
   margin-bottom: 1.5em;
-  color: #7b7b7b;
+  color: rgb(243, 207, 0);
+  background-color: #252525;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .home_container img {
   /* estilo da img dentro da classe home_container */
   width: 350px;
-  margin: 2em 0;
+  margin: 6em 0px;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .linha{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home_container h1 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 0.9rem;
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+
+  
+  .conteudo img {
+    width: 200px;
+  }
 }
