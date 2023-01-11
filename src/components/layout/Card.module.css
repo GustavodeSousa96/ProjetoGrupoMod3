@@ -12,6 +12,12 @@
     flex-direction: column;
     background-color: solid black 1px;
     text-align: center;
+    box-shadow: 5px 1px 20px 10px rgb(29, 28, 28);
+}
+
+.card_body a:hover {
+    color: white;
+    background-color: rgb(209, 172, 6);;
 }
 .card p,h3{
     color: white;

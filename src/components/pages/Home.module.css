@@ -4,7 +4,7 @@
   flex-direction: column; /*Sistema de colunas, para poder colocar um item abaixo do outro  */
   align-items: center; /*Alinhamento vertical*/
   justify-content: center; /*Alinhamento horizontal*/
-  padding: 4em;
+  padding: 2em;
 }
 
 .linha{
@@ -20,13 +20,12 @@
 }
 
 .texto{
-  background-color: #252525;
+  width: 100%s;
   font-family: sans-serif;
   font-size: 25px;
-  padding: 10px;
   display: flex;
   gap: 20px;
-  border-radius: 20px;
+  box-shadow: 5px 1px 20px 10px rgb(29, 28, 28);
 }
 
 .home_container h1 {
@@ -43,10 +42,11 @@
     font-size: 2.25rem;
     padding: 10px;
     border-radius: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
     color: rgb(243, 207, 0);
-    background: linear-gradient(-45deg, #302f2f ,#555454,#b8b6b5);
+    background: linear-gradient(-45deg, #000000 ,#3b3b3b,#000000);
     background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
+    animation: gradient 5s ease infinite;
     height: 100vh;
   }
   
@@ -77,7 +77,36 @@
 .home_container img {
   /* estilo da img dentro da classe home_container */
   width: 350px;
-  margin: 6em 0px;
+  padding: 8px;
+}
+
+.textImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #252525;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px 10px #252525;
+  margin-top: 20px;
+}
+
+.titleVenda {
+  color: rgb(255, 208, 0);
+  background-color: #252525;
+}
+
+@media only screen and (max-device-width: 1000px) { 
+  .linha {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -103,12 +132,19 @@
   .texto {
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-radius: 20px;
   }
+  .textImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textImg img {
+    width: 150px;
+  }
 
-  
-  .conteudo img {
-    width: 200px;
+  .homeFooter h1 {
+    font-size: 15px;
   }
 }
